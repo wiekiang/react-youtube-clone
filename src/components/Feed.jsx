@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
+import Sidebar from "./Sidebar";
 
 const Feed = () => {
     return (
@@ -13,11 +14,12 @@ const Feed = () => {
                     px: { sx: 0, md: 2 },
                 }}
             >
+                <Sidebar />
                 <Typography
                     className="copyright"
                     sx={{ mt: 1.5, color: "#fff" }}
                 >
-                    Copyright &copy; 2023. Wie Kiang Hi. All rights reserved.
+                    &copy; 2023. Wie Kiang Hi. All rights reserved.
                 </Typography>
             </Box>
         </Stack>
